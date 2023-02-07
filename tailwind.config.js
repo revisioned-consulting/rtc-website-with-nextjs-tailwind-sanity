@@ -4,7 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 //  TODO: add visby font
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['app/**/*.{ts,tsx}', 'pages/**/*.{ts,tsx}'],
+  content: ['app/**/*.{ts,tsx}', 'pages/**/*.{ts,tsx}', 'components/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -39,12 +39,12 @@ module.exports = {
         heading: ['var(--wayfinder-font)', ...defaultTheme.fontFamily.mono],
         sans: ['var(--visby-font)', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        mobile: '352px',
+        tablet: '896px',
+        desktop: '1344px',
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
 }

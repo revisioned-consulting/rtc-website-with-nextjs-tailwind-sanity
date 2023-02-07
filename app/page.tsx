@@ -1,16 +1,17 @@
+import HeroSection from '@/components/HeroSection'
+import SiteBanner from '@/components/SiteBanner'
+import Header, { NavigationLinks } from '@/components/Header'
+
+const links: NavigationLinks[] = [
+  { text: 'Home', href: '/' },
+  { text: 'Program Details', href: '/cna-program' },
+  { text: 'About us', href: '/about' },
+]
 const HomePage = () => (
-  <div className="bg-neutral-1">
-    <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
-      <div className="text-center">
-        <h2 className="text-lg font-semibold text-indigo-600">Pricing</h2>
-        <p className="mt-1 font-heading text-4xl font-bold tracking-tight text-primary-700 text-gray-900 sm:text-5xl lg:text-6xl">
-          Take control of your team.
-        </p>
-        <p className="mx-auto mt-5 max-w-xl text-xl font-medium text-gray-500">
-          Start building for free, then add a site plan to go live. Account plans unlock additional features.
-        </p>
-      </div>
-    </div>
+  <div className="bg-primary-100">
+    <SiteBanner />
+    <Header links={links} />
+    <HeroSection />
   </div>
 )
 export default HomePage
