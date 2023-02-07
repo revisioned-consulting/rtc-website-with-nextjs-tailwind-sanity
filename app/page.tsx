@@ -1,6 +1,7 @@
 import HeroSection from '@/components/HeroSection'
 import SiteBanner from '@/components/SiteBanner'
 import Header, { NavigationLinks } from '@/components/Header'
+import BenefitsSection from '@/components/BenefitsSection'
 
 const links: NavigationLinks[] = [
   { text: 'Home', href: '/' },
@@ -9,9 +10,10 @@ const links: NavigationLinks[] = [
 ]
 const HomePage = () => (
   <div className="bg-primary-100">
-    <SiteBanner />
+    {/*<SiteBanner />*/}
     <Header links={links} />
     <HeroSection />
+    <BenefitsSection />
   </div>
 )
 export default HomePage

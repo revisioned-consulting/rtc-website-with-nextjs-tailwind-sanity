@@ -14,11 +14,11 @@ const HeroSection = ({}: HeroSectionProps) => {
       <div className="-mx-4 flex flex-wrap items-start lg:my-10">
         <div className="mb-8 w-full px-4 md:mb-0 md:w-2/3">
           <h1>
-            <Balancer className="mb-8 font-heading text-4xl font-semibold tracking-wide text-primary-700 lg:text-5xl 2xl:text-7xl">
-              Get trained. Get certified. Get into Healthcare quickly.
+            <Balancer className="mb-8 font-heading text-4xl font-semibold tracking-wide text-primary-700 lg:text-5xl 2xl:text-8xl">
+              Get trained, get certified. Get into Healthcare quickly.
             </Balancer>
           </h1>
-          <p className="mb-6 max-w-lg text-lg leading-loose text-primary-800">
+          <p className="mb-6 max-w-xl text-lg leading-loose text-primary-800 2xl:text-xl">
             Build a well-presented brand that everyone will love. Take care to develop resources continually and
             integrity them with previous projects.
           </p>

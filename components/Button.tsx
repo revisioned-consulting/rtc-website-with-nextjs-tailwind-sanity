@@ -6,7 +6,7 @@ import clsx from 'clsx'
 export type ButtonProps = {
   text: string
   icon?: ReactNode
-  variant?: 'primary' | 'secondary' | 'cta'
+  variant?: 'primary' | 'secondary' | 'cta' | 'inverted'
   intent?: 'button' | 'link'
   size?: 'sm' | 'md' | 'lg'
   to?: string
@@ -22,6 +22,7 @@ const btn = cva(
           'border-primary-800 text-primary-700 hover:bg-primary-50 hover:text-primary-500 hover:border-primary-500',
         ],
         cta: ['border-primary-800 text-primary-700 hover:bg-primary-500 hover:text-white hover:border-transparent'],
+        inverted: ['border-neutral-1 bg-transparent text-neutral-1 hover:bg-neutral-1 hover:text-primary-700'],
       },
       size: {
         sm: ['py-2 px-4 text-sm'],
