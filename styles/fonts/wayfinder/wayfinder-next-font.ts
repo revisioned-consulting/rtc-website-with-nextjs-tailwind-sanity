@@ -1,6 +1,6 @@
 import localFont from "@next/font/local";
 
-export const wayfinder = localFont({
+export const wayfinderFont = localFont({
   src: [
     { path: "./WayFinderCF-Thin.eot", weight: "100" },
     { path: "./WayFinderCF-Thin.woff", weight: "100" },

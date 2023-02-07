@@ -1,13 +1,9 @@
-import "./globals.css";
-import { wayfinder } from "@/styles";
+import './globals.css'
+import { visbyFont, wayfinderFont } from '@/styles'
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${wayfinder.variable}`}>
+    <html lang="en" className={`${wayfinderFont.variable} ${visbyFont.variable}`}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -15,5 +11,5 @@ export default function RootLayout({
       <head />
       <body>{children}</body>
     </html>
-  );
+  )
 }

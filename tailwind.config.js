@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mauve: {
+        neutral: {
           1: mauve.mauve1,
           2: mauve.mauve2,
           3: mauve.mauve3,
@@ -22,12 +22,29 @@ module.exports = {
           11: mauve.mauve11,
           12: mauve.mauve12,
         },
+        primary: {
+          50: '#f9ebfe',
+          100: '#e2c7eb',
+          200: '#cca4da',
+          300: '#b880cb',
+          400: '#a35cbb',
+          500: '#8943a2',
+          600: '#6b337e',
+          700: '#4d255b',
+          800: '#2f1538',
+          900: '#120517',
+        },
       },
       fontFamily: {
-        heading: ['var(--wayfinder-font)',...defaultTheme.fontFamily.mono],
-        sans: ['var(--visby-font)',...defaultTheme.fontFamily.sans]
-      }
+        heading: ['var(--wayfinder-font)', ...defaultTheme.fontFamily.mono],
+        sans: ['var(--visby-font)', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+  ],
 }
